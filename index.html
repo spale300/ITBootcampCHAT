@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ITBootcamp Chat</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>ITBootcamp Chat</h1>
+      <h2>Choose a chatroom</h2>
+    </header>
+
+    <nav class="row">
+      <button id="btnGeneral" class="btn col-3 col-m-6">#general</button>
+      <button id="btnJs" class="btn col-3 col-m-6">#js</button>
+
+      <button id="btnHomeworks" class="btn col-3 col-m-6">#homeworks</button>
+      <button id="btnTests" class="btn col-3 col-m-6">#tests</button>
+    </nav>
+
+    <section>
+      <ul></ul>
+    </section>
+    <form class="row">
+      <input
+        type="color"
+        name="fcolor"
+        id="fcolor"
+        value="#fff"
+        class="col-9 col-m-12"
+      />
+      <input
+        type="submit"
+        value="Update color"
+        class="btn col-3 col-m-12"
+        id="colorC"
+      />
+    </form>
+
+    <form id="formMessage" class="row">
+      <input
+        type="text"
+        placeholder=" Your message..."
+        id="inputMessage"
+        class="col-9 col-m-12"
+      />
+      <input
+        type="submit"
+        value="Send"
+        id="btnSend"
+        class="btn col-3 col-m-12"
+      />
+    </form>
+
+    <form id="formUsername" class="row">
+      <input
+        type="text"
+        placeholder=" Update username"
+        id="inputUsername"
+        class="col-9 col-m-12"
+      />
+      <input
+        type="submit"
+        value="Update"
+        id="btnUpdate"
+        class="btn col-3 col-m-12"
+      />
+    </form>
+
+    <span id="update"></span>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyAQDWlBoz4Did9qHPLhaSo1bCgwI_RDj1k",
+        authDomain: "itbootcamp-js-a0261.firebaseapp.com",
+        projectId: "itbootcamp-js-a0261",
+        storageBucket: "itbootcamp-js-a0261.appspot.com",
+        messagingSenderId: "45695812997",
+        appId: "1:45695812997:web:4ac79f0418331a3d37f0ec",
+        measurementId: "G-T3J810P29R",
+      };
+
+      firebase.initializeApp(firebaseConfig);
+      let db = firebase.firestore();
+    </script>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  color: purple;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 50px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+section {
+  width: 70%;
+  margin: auto;
+  height: 500px;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+section::-webkit-scrollbar {
+  display: none;
+}
+.row {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 850px) {
+  [class*="col-"] {
+    float: left;
+  }
+
+  .col-1 {
+    width: 8.33%;
+  }
+
+  .col-2 {
+    width: 16.66%;
+  }
+
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-5 {
+    width: 41.66%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-7 {
+    width: 58.33%;
+  }
+
+  .col-8 {
+    width: 66.66%;
+  }
+
+  .col-9 {
+    width: 75%;
+  }
+
+  .col-10 {
+    width: 83.33%;
+  }
+
+  .col-11 {
+    width: 91.66%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  [class*="col-m-"] {
+    float: left;
+  }
+
+  .col-m-1 {
+    width: 8.33%;
+  }
+
+  .col-m-2 {
+    width: 16.66%;
+  }
+
+  .col-m-3 {
+    width: 25%;
+  }
+
+  .col-m-4 {
+    width: 33.33%;
+  }
+
+  .col-m-5 {
+    width: 41.66%;
+  }
+
+  .col-m-6 {
+    width: 50%;
+  }
+
+  .col-m-7 {
+    width: 58.33%;
+  }
+
+  .col-m-8 {
+    width: 66.66%;
+  }
+
+  .col-m-9 {
+    width: 75%;
+  }
+
+  .col-m-10 {
+    width: 83.33%;
+  }
+
+  .col-m-11 {
+    width: 91.66%;
+  }
+
+  .col-m-12 {
+    width: 100%;
+  }
+}
+
+.btn {
+  height: 40px;
+  font-size: 18px;
+  background-color: purple;
+  color: white;
+  border: 2px solid white;
+  border-radius: 7px;
+}
+
+.btn:hover {
+  background-color: rebeccapurple;
+  cursor: pointer;
+  border: 2px solid rebeccapurple;
+  transition: all 0.4s ease-out;
+}
+
+form {
+  margin: 15px;
+}
+
+input {
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+input:focus {
+  border: 3px purple solid;
+}
+
+input:focus,
+.btn:focus {
+  outline-width: 0;
+}
+
+.username {
+  font-weight: bold;
+  color: purple;
+}
+
+.list {
+  list-style: none;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  color: #333;
+  width: 50%;
+  margin: 5px;
+  padding: 20px;
+
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
+}
+
+.list-l {
+  text-align: left;
+  float: left;
+}
+
+.list-r {
+  text-align: right;
+  float: right;
+}
+
+.active {
+  background-color: rebeccapurple;
+  font-weight: bold;
+  opacity: 100%;
+}
+
+#update {
+  background-color: #333;
+  color: white;
+}
+
+.img {
+  width: 20px;
+}
